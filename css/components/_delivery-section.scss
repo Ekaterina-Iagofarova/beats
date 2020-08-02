@@ -1,0 +1,13 @@
+.delivery-section{
+  background: url(../images/bg/bg_form.jpg) center top / cover no-repeat;
+
+  &__container{
+      
+    &:after{
+      position: absolute;
+      content: url(../images/bg/bg_element_4.png);
+      right: 4%;
+      top: -49%;
+    }
+  }
+}

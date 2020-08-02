@@ -1,0 +1,11 @@
+.benefits{
+  display: inline-flex;
+  
+  &__item{
+    margin-right: rem(36px);
+    
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

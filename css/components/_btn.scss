@@ -1,0 +1,32 @@
+.btn{
+  font-size: rem(16px);
+  font-family: 'Play', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: rem(20px) rem(40px) rem(21px);
+  border-radius: 36px;
+  line-height: 1;
+  border: none;
+  outline: none;
+
+  &_primary{
+    background: $primary;
+    color: #ffffff;
+
+    &:hover{
+      background: darken($color: $primary, $amount: 5%);
+    }
+  }
+
+  &_transparent{
+    background: transparent;
+    text-transform: none;
+    font-size: rem(18px);
+    font-weight: normal;
+    color: #ffffff;
+
+    &:hover{
+      color: darken($color: $primary, $amount: 5%);
+    }
+  }
+}

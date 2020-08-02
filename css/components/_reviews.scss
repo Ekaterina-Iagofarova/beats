@@ -1,0 +1,103 @@
+.reviews{
+
+  &__block{
+    background: $secondary;
+    padding: rem(50px) rem(45px) rem(34px);
+    margin-bottom: rem(22px);
+    position: relative;
+    overflow: hidden;
+
+    @include tablet{
+      padding: rem(58px) rem(6px) rem(34px);
+    }
+
+    &:before{
+      content: "";
+      display: block;
+      width: rem(90px);
+      height: rem(90px);
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: rem(-60px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:after{
+      content: url(../img/bg/bg_review_1.png);
+      position: absolute;
+      top: 0;
+      right: 0;
+      }
+  }
+  &__wrapper{
+    display: flex;
+
+    @include tablet{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  &__avatar{
+    width: 254px;
+    height: 260px;
+
+    @include tablet{
+    width: 130px;
+    height: 132px;
+    margin-bottom: rem(20px);
+    }
+  }
+  &__avatar-img{
+    // display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    //чтобы картинка точно не вылезла за блок
+    overflow: hidden;
+  }
+
+  &__content{
+    flex: 1;
+    margin-left: rem(20px);
+    padding: rem(6px) 0;
+    font-size: rem(18px);
+    @include phone{
+      margin-left: 0;
+    }
+  }
+  &__title{
+    font-size: rem(27px);
+    font-weight: bold;
+    margin-bottom: rem(18px);
+    @include tablet{
+      margin-bottom: rem(16px);
+    }
+  }
+  &__text{
+    color: #666666;
+    line-height: 1.25;
+    font-weight: 500;
+    margin-bottom: rem(26px);
+    padding-right: 10%;
+
+    @include tablet{
+      margin-bottom: rem(18px);
+      padding-right: rem(52px) ;
+    }
+    @include phone{
+      padding-right: 0;
+    }
+  }
+  &__author{
+    font-weight: bold;
+    color: #000000;
+  }
+
+  &__switch{
+    display: flex;
+    justify-content: center;
+  }
+}

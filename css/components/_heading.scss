@@ -1,0 +1,27 @@
+.heading{
+  text-align: center;
+
+  &__title{
+    margin-bottom: rem(12px);
+
+    @include phone{
+      font-size: rem(40px);
+    }
+  }
+
+  &__subtitle{
+    color: #666666;
+    padding: 0 18%;
+    font-size: rem(18px);
+    line-height: 1.2;
+    margin-bottom: rem(57px);
+
+    @include tablet{
+      padding: 0 12%;
+    }
+
+    @include phone{
+      padding: 0;
+    }
+  }
+}

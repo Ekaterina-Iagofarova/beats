@@ -1,0 +1,23 @@
+.burger-menu{
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  position: fixed;
+  top: 3%;
+  right: 4%;
+
+  @include tablet{
+    display: inline-flex;
+  }
+
+  &__line{
+    display: block;
+    background: #292929;
+    width: 24px;
+    height: 4px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,31 @@
+.social{
+
+  &__list{
+    display: flex;
+    height: 22px;
+    align-items: center;
+  }
+
+  &__item{
+    margin-right: rem(10px);
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__icon{
+    fill: #B3B3B3;
+    width: 36px;
+    height: 36px;
+    
+    &:hover{
+      fill: #000;
+    }
+
+    @include phone{
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

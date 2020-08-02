@@ -1,0 +1,39 @@
+.inter-avatar{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid transparent;
+  position: relative;
+
+  @include tablet{
+    width: 70px;
+    height: 70px;
+    margin-right: rem(10px);
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &_active{
+    border-color: $primary;
+  }
+  &:hover{
+    border-color: $primary;
+  }
+  &__link{
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // display: block;
+    //дисплей блок добавляется, тк меняли размеры ссылки 
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,16 @@
+.benefit{
+  display: flex;
+  align-items: center;
+
+  &__icon{
+    width: 44px;
+    fill: #000000;
+    margin-right: rem(6px);
+  }
+
+  &__text{
+    width: rem(94px);
+    font-size: rem(16px);
+    line-height: 1.2;
+  }
+}

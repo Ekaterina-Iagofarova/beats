@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  &__img{
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  &__nav{
+    margin-left: rem(44px);
+  }
+
+  &__contacts{
+    display: flex;
+    margin-left: auto;
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &__burger{
+    position: fixed;
+  }
+}

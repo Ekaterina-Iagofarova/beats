@@ -1,0 +1,43 @@
+.advantages{
+  display: flex;
+
+  @include phone{
+    flex-direction: column;
+  }
+  &__item{
+    flex: 1;
+    padding-right: 3%;
+    position: relative;
+
+    @include tablet{
+      padding-right: 1%;
+    }
+    
+    @include phone{
+      padding-right: 0;
+      margin-bottom: rem(40px);
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child{
+      padding-right: 0;
+      &:after{
+        display: none;
+      }
+    }
+
+    &:after{
+      content: url(../images/bg/bg_decore.png);
+      position: absolute;
+      top: rem(50px);
+      right: rem(14px);
+      transform: translateX(50%);
+
+      @include tablet{
+        display: none;
+      }
+    }
+  }
+}

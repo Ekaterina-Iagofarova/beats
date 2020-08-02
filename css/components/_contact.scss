@@ -1,0 +1,35 @@
+.contact{
+  font-size: rem(21px);
+
+  &__phone{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &:hover{
+      text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &__icon{
+    width: 13px;
+    height: 12px;
+    margin-right: 6px;
+    fill: #000000;
+  }
+
+  &__phone-number{
+    white-space: nowrap;
+  }
+
+  &__address{
+    color: inherit;
+    font-size: rem(18px);
+    margin-bottom: rem(-4px);
+    
+    @include phone{
+      font-size: rem(20px);
+      margin-bottom: rem(16px);    
+    }
+  }
+}

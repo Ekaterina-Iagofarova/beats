@@ -1,0 +1,12 @@
+.advantages-section{
+
+  &__container{
+
+    &:after{
+      position: absolute;
+      content: url(../images/bg/bg_element_1.png);
+      left: 16%;
+      bottom: -46.5%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.map-section{
+  background: url(../images/bg/bg_map.jpg) center top / cover no-repeat;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    content: url(../images/bg/bg_map_icon.png);
+    width: 58px;
+    height: 73px;
+    top: 50%;
+    left: 57%;
+  }
+
+  &__footer{
+    background: #ffffff;
+    position: absolute;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
