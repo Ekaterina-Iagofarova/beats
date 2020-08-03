@@ -500,7 +500,7 @@ table {
 
 .reviews-section__container:after {
   position: absolute;
-  content: url(/images/bg/bg_element_3.png);
+  content: url(../images/bg/bg_element_3.png);
   left: 17%;
   bottom: -30.5%; }
 
