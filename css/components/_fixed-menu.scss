@@ -33,7 +33,10 @@
     position: relative;
 
     &:hover{
-      border-color: #292929;
+      border-color: $primary;
+      &:before{
+        background: $primary;
+      }
     }
 
     &:before{

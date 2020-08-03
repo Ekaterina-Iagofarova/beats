@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap";
 
 //layout
-@import "./layout/normalize.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.css";
 @import "./layout/variables";
 @import "./layout/mixins";
 @import "./layout/base";
@@ -11,6 +11,7 @@
 @import "./components/btn";
 @import "./components/head-section";
 @import "./components/header";
+@import "./components/logo";
 @import "./components/menu";
 @import "./components/contact";
 @import "./components/burger-menu";

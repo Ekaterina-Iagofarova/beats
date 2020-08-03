@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap";
-@import url(./layout/normalize.css);
+@import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.css";
 html {
   font-size: 18px; }
   @media screen and (max-width: 768px) {
@@ -136,11 +136,8 @@ table {
 
 .header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   position: relative; }
-  .header__img {
-    min-width: 40px;
-    min-height: 40px; }
   .header__nav {
     margin-left: 2.4444444444rem; }
   .header__contacts {
@@ -151,6 +148,10 @@ table {
         display: none; } }
   .header__burger {
     position: fixed; }
+
+.logo__img {
+  min-width: 40px;
+  min-height: 40px; }
 
 .menu {
   margin-left: 2.1111111111rem;
@@ -442,11 +443,6 @@ table {
     top: -3.3333333333rem;
     left: 50%;
     transform: translateX(-50%); }
-  .reviews__block:after {
-    content: url(../img/bg/bg_review_1.png);
-    position: absolute;
-    top: 0;
-    right: 0; }
 .reviews__wrapper {
   display: flex; }
   @media screen and (max-width: 768px) {
@@ -590,7 +586,7 @@ table {
     .form__input:focus {
       border-color: #e01f3d; }
     .form__input_textarea {
-      height: 10rem;
+      height: 9.5555555556rem;
       resize: none; }
       @media screen and (max-width: 768px) {
         .form__input_textarea {
@@ -681,7 +677,9 @@ table {
     display: block;
     position: relative; }
     .fixed-menu__link:hover {
-      border-color: #292929; }
+      border-color: #e01f3d; }
+      .fixed-menu__link:hover:before {
+        background: #e01f3d; }
     .fixed-menu__link:before {
       content: "";
       display: block;

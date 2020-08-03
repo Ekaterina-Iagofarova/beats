@@ -23,13 +23,6 @@
       left: 50%;
       transform: translateX(-50%);
     }
-
-    &:after{
-      content: url(../img/bg/bg_review_1.png);
-      position: absolute;
-      top: 0;
-      right: 0;
-      }
   }
   &__wrapper{
     display: flex;
