@@ -262,20 +262,20 @@ table {
     height: 100%;
     z-index: 10; } }
 
-.burger--active .burger__line {
+.burger_active .burger__line {
   background-color: #fff; }
-  .burger--active .burger__line:nth-child(1) {
+  .burger_active .burger__line:nth-child(1) {
     opacity: 0; }
-  .burger--active .burger__line:nth-child(2) {
+  .burger_active .burger__line:nth-child(2) {
     transform: rotate(45deg); }
-  .burger--active .burger__line:nth-child(3) {
+  .burger_active .burger__line:nth-child(3) {
     transform: rotate(-45deg) translateY(-5px) translateX(5px); }
 
-.overlay--active {
+.overlay_active {
   left: 0;
   opacity: 1; }
 
-.body--active-menu {
+.body_active-menu {
   overflow: hidden; }
 
 .hero__content {

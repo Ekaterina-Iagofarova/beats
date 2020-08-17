@@ -10,9 +10,9 @@ links.forEach(function(element){
 })
 
 function toggleMenu(){
-  burger.classList.toggle('burger--active');
-  overlay.classList.toggle('overlay--active');
-  body.classList.toggle('body--active-menu');
+  burger.classList.toggle('burger_active');
+  overlay.classList.toggle('overlay_active');
+  body.classList.toggle('body_active-menu');
 }
 
 burger.addEventListener('click' , toggleMenu);
