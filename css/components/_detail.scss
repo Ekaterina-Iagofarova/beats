@@ -1,0 +1,70 @@
+.detail{
+  position: relative;
+
+  &:hover{
+    .detail__list{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 91px;
+    }
+  }
+
+  &__wrap{
+    background: #9a9a9a;
+    border-radius: 4px;
+    width: 91px;
+    height: 91px;
+    position: relative;
+    margin-bottom: rem(36px);
+
+    &:hover{
+      background: darken($color: #9a9a9a, $amount: 10);
+    }
+  }
+
+  &__icon{
+    width: 42px;
+    height: 42px;
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &{
+    
+  }
+
+  &__list{
+    display: none;
+    min-width: 270px;
+    background: #fff;
+    border-radius: 4px;
+    padding: rem(25px) rem(15px) rem(15px);
+  }
+
+  &__item{
+    margin-bottom: rem(15px);
+  }
+
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+
+  &__sub-icon{
+    width: 33px;
+    height: 33px;
+    margin-right: rem(20px);
+  }
+
+  &__text{
+    // margin-right: rem(20px);
+  }
+
+  &__value{
+    margin-left: auto;
+  }
+}

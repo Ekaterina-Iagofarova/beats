@@ -1,0 +1,20 @@
+.price{
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include landscape{
+      justify-content: space-around;
+    }
+  }
+
+  &__value{
+    font-size: rem(36px);
+  }
+
+  &__button{
+    padding-right: 14%;
+  }
+}
