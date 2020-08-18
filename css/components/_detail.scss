@@ -33,10 +33,6 @@
     transform: translate(-50%, -50%);
   }
 
-  &{
-    
-  }
-
   &__list{
     display: none;
     min-width: 270px;
@@ -47,6 +43,10 @@
 
   &__item{
     margin-bottom: rem(15px);
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &__inner{

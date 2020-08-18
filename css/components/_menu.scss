@@ -7,14 +7,17 @@
     justify-content: center;
 
     @include tablet{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
+      display: none;
     }
   }
 
   &__item{
+    margin-right: rem(20px);
     
+    &:last-child{
+      margin-right: 0;
+    }
+
     @include tablet{
       margin-bottom:20px;
     }
@@ -31,15 +34,5 @@
   &__link{
     font-size: rem(16px);
     text-decoration: none;
-    margin-right: rem(20px);
-
-    @include tablet{
-    font-size: rem(22px);
-    color: #fff;
-    }
-
-    &:hover{
-      opacity:.8;
-    }
   }
 }
