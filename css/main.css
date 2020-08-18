@@ -228,14 +228,14 @@ table {
       bottom: 0;
       top: initial; }
 
-.content {
+.burger-content {
   opacity: .9;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .content__title {
+  .burger-content__title {
     color: #fff;
     font-size: 40px;
     text-transform: uppercase; }
