@@ -1,5 +1,26 @@
 .reviews{
 
+  &__list{
+    position: relative;
+  }
+
+  &__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: .5s;
+    opacity: 0;
+
+    &_active{
+      position: static;
+      opacity: 1;
+      pointer-events: unset;
+    }
+  }
+
   &__block{
     background: $secondary;
     padding: rem(50px) rem(45px) rem(34px);
@@ -33,6 +54,7 @@
       align-items: center;
     }
   }
+
   &__avatar{
     width: 254px;
     height: 260px;

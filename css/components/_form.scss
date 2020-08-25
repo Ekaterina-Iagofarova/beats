@@ -81,6 +81,10 @@
         height: rem(86px);
       }
     }
+
+    &_error{
+      border-color: $primary;
+    }
   }
 
   &__controls{

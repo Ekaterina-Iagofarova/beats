@@ -1,0 +1,19 @@
+.modal{
+  display: none;
+
+  &__container{
+    background: #fff;
+    padding: rem(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__message{
+    margin-bottom: rem(50px);
+    
+    &_error{
+      color: $primary;
+    }
+  }
+}

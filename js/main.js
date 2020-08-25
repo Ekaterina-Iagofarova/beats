@@ -62,3 +62,65 @@ function moveToLeft() {
     }
     slider.style.transform = `translate(-${sliderPosition}px)`;
 }
+
+// reviews JS ////
+
+const findBlock = alias => {
+    return $('.reviews__item').filter((ndx, item) =>{
+        return $(item).attr('data-related-to') === alias;
+    });
+};
+
+$('.inter-avatar__link').click(e =>{
+    e.preventDefault();
+
+    const $this = $(e.currentTarget);
+    const target = $this.attr('data-show');
+    const showItem = findBlock(target);
+    const item = $this.closest('.inter-avatar');
+
+    showItem.addClass('reviews__item_active').siblings().removeClass('reviews__item_active');
+    item.addClass('inter-avatar_active').siblings().removeClass('inter-avatar_active');
+});
+
+
+// team JS ////
+
+const openItem = item => {
+    const container = item.closest('.team__item');
+    const content = container.find('.team__content');
+    const wrap = content.find('.team__wrap');
+    const reqHeight = wrap.height();
+
+    container.addClass('team__item_active');
+    content.height(reqHeight);
+}
+
+const closeEachItem = container =>{
+    const items = container.find('.team__content');
+    const containerItem = container.find('.team__item');
+
+    containerItem.removeClass('team__item_active');
+    items.height(0);
+}
+
+$('.team__title').click(e =>{
+    const $this = $(e.currentTarget);
+    const container = $this.closest('.team');
+    const containerElement = $this.closest('.team__item');
+
+    if(containerElement.hasClass('team__item_active')){
+        closeEachItem(container);
+    }
+
+    else{
+        closeEachItem(container);
+        openItem($this);
+    }
+});
+
+// accordeon JS ////
+
+
+
+// video JS ////
