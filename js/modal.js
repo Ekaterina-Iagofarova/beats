@@ -42,7 +42,7 @@ $('.form').submit(e => {
 
     request.done((data) =>{
       content.text(data.message);
-
+      $(".btn_transparent").click();
     });
 
     request.fail((data) =>{

@@ -209,7 +209,12 @@ table {
   width: 24px;
   cursor: pointer;
   z-index: 15;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  opacity: .9; }
+  .burger__title {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .burger {
       display: block; } }
@@ -228,18 +233,6 @@ table {
     .burger__line:nth-child(3) {
       bottom: 0;
       top: initial; }
-
-.burger-content {
-  opacity: .9;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .burger-content__title {
-    color: #fff;
-    font-size: 40px;
-    text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
   .overlay {
@@ -845,7 +838,6 @@ table {
     width: auto;
     padding: 0;
     margin: 0;
-    overflow: hidden;
     transition: .5s all ease-out; }
   .slider__item {
     width: 102%;

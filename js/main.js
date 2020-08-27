@@ -20,10 +20,11 @@ burger.addEventListener('click' , toggleMenu);
 
 
 // slider JS ////
-const rightArrow = document.querySelectorAll('.slider__right');
-const leftArrow = document.querySelectorAll('.slider__left');
+const arrowsRight = document.querySelectorAll('.slider__right');
+console.log(arrowsRight);
+const arrowsLeft = document.querySelectorAll('.slider__left');
 const slideWidth = document.querySelector('.slider__item');
-const slider = document.getElementById('sliderRoot');
+const rootSlider = document.getElementById('sliderRoot');
 const sliderList = document.querySelector('.slider__list');
 
 console.log(sliderList);
@@ -32,36 +33,39 @@ let sliderPosition = 0;
 
 
 
-rightArrow.forEach((arrow) => {
-    arrow.addEventListener('click', () => moveToRight());
+arrowsRight.forEach((arrow) => {
+    arrow.addEventListener('click', () => moveRight());
 });
 
-leftArrow.forEach((arrow) => {
-    arrow.addEventListener('click', () => moveToLeft());
+
+arrowsLeft.forEach((arrow) => {
+    arrow.addEventListener('click', () => moveLeft());
 });
 
-function moveToRight() {
+
+function moveRight() {
     sliderPosition+= slideWidth.clientWidth;
-   
-    if (sliderPosition === sliderList.scrollWidth){
 
+    if (sliderPosition === sliderList.scrollWidth){
+ 
         sliderPosition = 0;
     }
-    slider.style.transform = `translate(-${sliderPosition}px)`;
+    rootSlider.style.transform = `translate(-${sliderPosition}px)`;
 }
 
-function moveToLeft() {
+function moveLeft() {
     if (sliderPosition === 0){
 
         sliderPosition = sliderList.scrollWidth - slideWidth.clientWidth;
     }
-
     else{
 
         sliderPosition -= slideWidth.clientWidth;
     }
-    slider.style.transform = `translate(-${sliderPosition}px)`;
+    rootSlider.style.transform = `translate(-${sliderPosition}px)`;
 }
+
+
 
 // reviews JS ////
 

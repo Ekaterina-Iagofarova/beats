@@ -8,6 +8,14 @@
   cursor: pointer;
   z-index: 15;
   transition: all .5s ;
+  opacity: .9;
+
+  
+  &__title{
+    color:#fff;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
 
   @include tablet{
     display: block;
@@ -33,21 +41,6 @@
       bottom: 0;
       top: initial;
     }
-  }
-}
-
-.burger-content{
-  opacity: .9;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  
-  &__title{
-    color:#fff;
-    font-size: 40px;
-    text-transform: uppercase;
   }
 }
 
