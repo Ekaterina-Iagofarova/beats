@@ -12,7 +12,7 @@
 
   &:after{
     position: absolute;
-    content: url(../images/bg/bg_element_0.png);
+    content: url(./images/bg/bg_element_0.png);
     right: 20%;
     bottom: rem(-24px);
 
@@ -22,7 +22,7 @@
   }
 
   &__container{
-    background: url(../images/product/photo_1.png) right bottom 50% / 50% auto no-repeat;
+    background: url(./images/product/photo_1.png) right bottom 50% / 50% auto no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

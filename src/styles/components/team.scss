@@ -46,7 +46,7 @@
 
     &_active{
       .team__title:after{
-        content: url(../images/icons/up_icon.png);
+        content: url(./images/icons/up_icon.png);
       }
     }
   }
@@ -63,7 +63,7 @@
     &:after{
       margin-left: 8px;
       vertical-align: text-top;
-      content: url(../images/icons/down_icon.png);
+      content: url(./images/icons/down_icon.png);
       height: 6px;
     }
   }
