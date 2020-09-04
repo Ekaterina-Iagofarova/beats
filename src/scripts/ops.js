@@ -77,7 +77,7 @@ const viewportScroller = () =>{
   };
 };
 
-$(window).on("wheel", e =>{
+$(window).on("wheel", (e) =>{
   const deltaY = e.originalEvent.deltaY;
   const scroller = viewportScroller();
 
@@ -88,7 +88,6 @@ $(window).on("wheel", e =>{
   if(deltaY < 0){
     scroller.prev();
   }
-
 });
 
 $(window).on("keydown",e =>{
