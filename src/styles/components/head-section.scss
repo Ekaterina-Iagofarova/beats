@@ -1,0 +1,49 @@
+.head-section {
+  background-color: $secondary;
+  width: 100%;
+  height: 100vh;
+  min-height: rem(650px);
+  padding: rem(24px) 0 rem(50px);
+  position: relative;
+
+  @include tablet{
+    background-position: right bottom 91%;
+  }
+
+  &:after{
+    position: absolute;
+    content: url(../images/bg/bg_element_0.png);
+    right: 20%;
+    bottom: rem(-24px);
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &__container{
+    background: url(../images/product/photo_1.png) right bottom 50% / 50% auto no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @include tablet{
+      background-position: center top 26%;
+      background-size: 50%;
+    }
+
+    @include phone{
+      background-position: center top 20%;
+      background-size: 82%;
+    }
+  }
+
+  &__icons{
+
+    @include tablet{
+      display: none;
+    }
+  }
+}
+

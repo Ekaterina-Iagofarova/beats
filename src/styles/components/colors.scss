@@ -1,0 +1,85 @@
+.colors{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+  &__item{
+    display: flex;
+    height: 100%;
+
+  }
+  &__title{
+    position: relative;
+    width: 100px;
+    background-position: left bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    
+    @include phone{
+      width: 60px;
+    }
+
+    &_silver{
+      background: #999999;
+    }
+    &_black{
+      background: #151515;
+    }
+    &_red{
+      background: $primary;
+    }
+  }
+  &__wrap{
+    
+  }
+  &__text{
+    color: #ffffff;
+    font-size: rem(48px);
+    font-weight: bold;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    width: 100%;
+    padding-left: 70%;
+
+    @include phone{
+      font-size: rem(36px);
+    }
+
+  }
+
+  &__content{
+    background: transparent;
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .5s;
+
+    &_silver{
+      background: rgba(102, 102, 102, .9);
+    }
+    &_black{
+      background: rgba(21, 21, 21, .8);
+    }
+    &_red{
+      background: rgba(224, 31, 61, .8);
+    }
+  }
+  &__container{
+    padding: rem(40px) rem(80px) rem(44px) rem(26px);
+  }
+  &__close{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    border: none;
+    background: transparent;
+  }
+  &__descr{
+    color: #ffffff;
+  }
+}

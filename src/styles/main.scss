@@ -1,0 +1,10 @@
+//fonts
+// @import "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap";
+
+//layout
+@import "./layout/variables.scss";
+@import "./layout/mixins.scss";
+@import "./layout/base.scss";
+
+//components
+@import "./components/*.scss";

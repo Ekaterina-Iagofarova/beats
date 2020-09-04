@@ -1,0 +1,13 @@
+.colors-section{
+  position: relative;
+  background: url(../images/bg/bg_accordeon_1.jpg) center center/cover no-repeat;
+
+
+  &__title{
+    color: #ffffff;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+}

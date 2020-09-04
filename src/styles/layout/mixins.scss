@@ -1,0 +1,22 @@
+@function rem($px){
+  @return $px / 18px + 0rem;
+}
+
+
+@mixin landscape {
+  @media screen and (max-width: $landscape) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
